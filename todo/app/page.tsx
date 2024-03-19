@@ -24,7 +24,7 @@ export default function Home() {
           background="transparent"
           minSize={0.5}
           maxSize={1.0}
-          particleDensity={50}
+          particleDensity={10}
           className="w-full h-full absolute z-50"
           particleColor="#FFFFFF"
         />
@@ -32,7 +32,7 @@ export default function Home() {
        <h1 className="mt-10 md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white  my-auto space-y-10 relative z-100">
         Mind
       </h1></div>
-      <div className="mt-10 relative z-0">
+      <div className="mt-10 relative z-100">
       <BentoGrid className="mt-50 mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
@@ -53,44 +53,49 @@ export default function Home() {
 const items = [
   {
     title: "The Dawn of Innovation",
-    tag: "Explore the birth of groundbreaking ideas and inventions.",
-   
+    tag:
+    "#Tag",
+
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Digital Revolution",
-    tag: "Dive into the transformative power of technology.",
+    tag:
+      "#Tag",
 
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Art of Design",
-    tag: "Discover the beauty of thoughtful and functional design.",
-
+    tag:
+      "#Tag",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Power of Communication",
     tag:
-      "Understand the impact of effective communication in our lives.",
+      "#Tag",
 
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Pursuit of Knowledge",
-    tag: "Join the quest for understanding and enlightenment.",
+    tag:
+      "#Tag",
 
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Joy of Creation",
-    tag: "Experience the thrill of bringing ideas to life.",
+    tag:
+      "#Tag",
 
     icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Spirit of Adventure",
-    tag: "Embark on exciting journeys and thrilling discoveries.",
+    tag:
+      "#Tag",
 
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
