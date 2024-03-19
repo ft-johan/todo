@@ -28,21 +28,24 @@ export default function Home() {
           className="w-full h-full absolute z-50"
           particleColor="#FFFFFF"
         />
-       <h1 className=" mt-8 md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
+        <div >
+       <h1 className="mt-10 md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white  my-auto space-y-10 relative z-0">
         Mind
-      </h1>
-      <BentoGrid className="mt-25 mx-auto">
+      </h1></div>
+      <div className="mt-10 relative z-0">
+      <BentoGrid className="mt-50 mx-auto">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
           title={item.title}
           tag={item.tag}
-          header={item.header}
+          
           icon={item.icon}
           className={i === 3 || i === 6 ? "md:col-span-2" : ""}
         />
       ))}
     </BentoGrid>
+    </div>
     </main>
   );
 }
