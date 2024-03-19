@@ -25,12 +25,12 @@ export default function Home() {
           minSize={0.8}
           maxSize={1.0}
           particleDensity={50}
-          className="w-full h-full absolute z-0"
+          className="w-full h-full mx-auto absolute z-0"
           particleColor="#FFFFFF"
         />
         <div >
        <h1 className="mt-10 md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white  my-auto space-y-10 relative z-100">
-        Mind
+        MINI Do.
       </h1></div>
       <div className="mt-10 relative z-100">
       <BentoGrid className="mt-50 mx-auto">
