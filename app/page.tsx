@@ -22,10 +22,10 @@ export default function Home() {
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
-          minSize={0.5}
+          minSize={0.8}
           maxSize={1.0}
-          particleDensity={10}
-          className="w-full h-full absolute z-50"
+          particleDensity={50}
+          className="w-full h-full absolute z-0"
           particleColor="#FFFFFF"
         />
         <div >
@@ -41,7 +41,7 @@ export default function Home() {
           tag={item.tag}
           
           icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          className={ (i/3) === 4 || (i/3) === 1 ? "md:col-span-2" : ""}
         />
       ))}
     </BentoGrid>
@@ -114,7 +114,7 @@ const items = [
 
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
-  
+
   {
     title: "The Digital Revolution",
     tag:
