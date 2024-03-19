@@ -29,7 +29,7 @@ export default function Home() {
           particleColor="#FFFFFF"
         />
         <div >
-       <h1 className="mt-10 md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white  my-auto space-y-10 relative z-0">
+       <h1 className="mt-10 md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white  my-auto space-y-10 relative z-100">
         Mind
       </h1></div>
       <div className="mt-10 relative z-0">
